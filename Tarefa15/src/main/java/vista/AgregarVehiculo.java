@@ -51,6 +51,10 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
         jSpinnerNumeroPuertas = new javax.swing.JSpinner();
         jLabel1 = new javax.swing.JLabel();
         jCheckBoxConduccionAutonoma = new javax.swing.JCheckBox();
+        jLabelConectividadMovil = new javax.swing.JLabel();
+        jCheckBoxConectividadMovil = new javax.swing.JCheckBox();
+        jLabelFechaFabricacion1 = new javax.swing.JLabel();
+        jTextFieldKilometraje = new javax.swing.JTextField();
 
         setClosable(true);
         setTitle("Agregar vehiculo");
@@ -88,6 +92,10 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Conduccion autonoma");
 
+        jLabelConectividadMovil.setText("Conectividad móvil");
+
+        jLabelFechaFabricacion1.setText("Kilometros");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -112,6 +120,14 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
                                 .addComponent(jTextFieldMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(27, 27, 27))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(jLabelFechaFabricacion1)
+                            .addGap(48, 48, 48)
+                            .addComponent(jTextFieldKilometraje))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabelConectividadMovil)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jCheckBoxConectividadMovil))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addComponent(jLabel1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -181,13 +197,21 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
                     .addComponent(jLabelCombustible)
                     .addComponent(jComboBoxCombustible, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelFechaFabricacion1)
+                    .addComponent(jTextFieldKilometraje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabelFechaFabricacion)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1))
                     .addComponent(jCheckBoxConduccionAutonoma))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelConectividadMovil)
+                    .addComponent(jCheckBoxConectividadMovil))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
@@ -200,6 +224,7 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JCheckBox jCheckBoxConduccionAutonoma;
+    private javax.swing.JCheckBox jCheckBoxConectividadMovil;
     private javax.swing.JComboBox<String> jComboBoxCombustible;
     private javax.swing.JComboBox<String> jComboBoxMarca;
     private javax.swing.JComboBox<String> jComboBoxModelo;
@@ -207,7 +232,9 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelColor;
     private javax.swing.JLabel jLabelCombustible;
+    private javax.swing.JLabel jLabelConectividadMovil;
     private javax.swing.JLabel jLabelFechaFabricacion;
+    private javax.swing.JLabel jLabelFechaFabricacion1;
     private javax.swing.JLabel jLabelMarca;
     private javax.swing.JLabel jLabelMatricula;
     private javax.swing.JLabel jLabelModelo;
@@ -218,6 +245,7 @@ public class AgregarVehiculo extends javax.swing.JInternalFrame {
     private javax.swing.JRadioButton jRadioButtonFurgoneta;
     private javax.swing.JRadioButton jRadioButtonMoto;
     private javax.swing.JSpinner jSpinnerNumeroPuertas;
+    private javax.swing.JTextField jTextFieldKilometraje;
     private javax.swing.JTextField jTextFieldMatricula;
     private javax.swing.JTextField jTextFieldVIN;
     // End of variables declaration//GEN-END:variables

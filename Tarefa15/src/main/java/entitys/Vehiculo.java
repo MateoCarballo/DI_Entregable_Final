@@ -76,15 +76,26 @@ public class Vehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
+    
     @NonNull
     private TiposVehiculo tipo;
 
     @NonNull
+    private String matricula;
+    
+    @NonNull
+    private String vin;
+    
+    @NonNull
     private String marca;
 
     @NonNull
-    private String modelo;
+    private String modelo; 
+    
+    @NonNull
+    private TiposColor color;
+    
+    private int puertas;
 
     @NonNull
     private TiposMotorizacion motorizacion;
@@ -92,11 +103,6 @@ public class Vehiculo {
     private int anoFabricacion;
 
     private long kilometraje;
-
-    @NonNull
-    private TiposColor color;
-
-    private int puertas;
 
     private boolean conetividadMovil;
 
@@ -107,19 +113,3 @@ public class Vehiculo {
     @JoinColumn(name = "id") // nombre de la tabla que contiene el id
     private Vendedor vendedor;
 }
-
-/**
- * Para incluir en la nueva entidad de "compra"
- *
- * @ManyToOne
- * @JoinColumn(name = "vendedor_id") // nombre de la tabla que contiene el id
- * con el que se enlaza que seria clave foranea private Vendedor vendedor;
- *
- * @ManyToOne
- * @JoinColumn(name = "comprador_id") // nombre de la tabla que contiene el id
- * con el que se enlaza que seria clave foranea private Comprador comprador;
- *
- *
- * private LocalDate fechaCompra;
- *
- */

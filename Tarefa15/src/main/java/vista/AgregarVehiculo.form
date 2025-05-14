@@ -59,6 +59,16 @@
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabelFechaFabricacion1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="jTextFieldKilometraje" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabelConectividadMovil" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jCheckBoxConectividadMovil" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jCheckBoxConduccionAutonoma" min="-2" max="-2" attributes="0"/>
@@ -147,15 +157,25 @@
                   <Component id="jComboBoxCombustible" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelFechaFabricacion1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldKilometraje" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabelFechaFabricacion" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jCheckBoxConduccionAutonoma" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="100" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jLabelConectividadMovil" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxConectividadMovil" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -265,6 +285,20 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="jCheckBoxConduccionAutonoma">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelConectividadMovil">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Conectividad m&#xf3;vil"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxConectividadMovil">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelFechaFabricacion1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kilometros"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldKilometraje">
     </Component>
   </SubComponents>
 </Form>
